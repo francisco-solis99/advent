@@ -12,3 +12,13 @@ function createFrame(names: string[]): string {
   frame += border;
   return frame
 }
+
+createFrame(['midu', 'madeval', 'educalvolpz'])
+/*
+// Expected result:
+***************
+* midu        *
+* madeval     *
+* educalvolpz *
+***************
+* */
