@@ -1,6 +1,6 @@
-function createFrame(names: string[]): string {
+function createFrame (names: string[]): string {
   const namesLong: number[] = names.map(name => name.length)
-  const maxLong : number = Math.max(...namesLong)
+  const maxLong: number = Math.max(...namesLong)
   const border = '*'.repeat(maxLong + 4)
   let frame = `${border}\n`
 
@@ -9,7 +9,7 @@ function createFrame(names: string[]): string {
     frame += lineName
   })
 
-  frame += border;
+  frame += border
   return frame
 }
 

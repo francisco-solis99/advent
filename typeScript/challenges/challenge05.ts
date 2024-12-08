@@ -1,38 +1,38 @@
-type Shoe = {
-  type: string
+interface Shoe {
+  type: 'I' | 'R'
   size: number
 }
 
-type ShoePair = {
-  I: number,
+interface ShoePair {
+  I: number
   R: number
 }
 
-function organizeShoes(shoes: Shoe[]): number[] {
+function organizeShoes (shoes: Shoe[]): number[] {
   const shoesPairs: Record<string, ShoePair> = {}
   const boots: number[] = []
-  for(const {type, size} of shoes) {
-    if(!shoesPairs[size]) {
-      shoesPairs[size] = {I: 0, R: 0}
+  for (const { type, size } of shoes) {
+    if (shoesPairs[size] === undefined) {
+      shoesPairs[size] = { I: 0, R: 0 }
     }
-    shoesPairs[size][type] += 1;
-    if(shoesPairs[size]['I'] > 0 && shoesPairs[size]['R'] > 0) {
+    shoesPairs[size][type] += 1
+    if (shoesPairs[size].I > 0 && shoesPairs[size].R > 0) {
       boots.push(size)
-      shoesPairs[size]['R'] -= 1
-      shoesPairs[size]['I'] -= 1
+      shoesPairs[size].R -= 1
+      shoesPairs[size].I -= 1
     }
   }
   return boots
 }
 
-const shoes = [
+const shoes: Shoe[] = [
   { type: 'I', size: 38 },
   { type: 'R', size: 38 },
   { type: 'R', size: 42 },
   { type: 'I', size: 41 },
   { type: 'I', size: 42 }
 ]
-const shoes2 = [
+const shoes2: Shoe[] = [
   { type: 'I', size: 38 },
   { type: 'R', size: 38 },
   { type: 'I', size: 38 },
