@@ -10,6 +10,7 @@ def organizeInventory(inventory):
         grouped[category][name] += item["quantity"]
     return grouped
 
+
 data = [
     { "name": 'doll', "quantity": 5, "category": 'toys' },
     { "name": 'car', "quantity": 3, "category": 'toys' },
