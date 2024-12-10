@@ -1,8 +1,8 @@
-function createFrame (names: string[]): string {
+export function createFrame (names: string[]): string {
   const namesLong: number[] = names.map(name => name.length)
   const maxLong: number = Math.max(...namesLong)
-  const border = '*'.repeat(maxLong + 4)
-  let frame = `${border}\n`
+  const border: string = '*'.repeat(maxLong + 4)
+  let frame: string = `${border}\n`
 
   names.forEach(name => {
     const lineName = `* ${name.padEnd(maxLong, ' ')} *\n`
@@ -12,13 +12,3 @@ function createFrame (names: string[]): string {
   frame += border
   return frame
 }
-
-createFrame(['midu', 'madeval', 'educalvolpz'])
-/*
-// Expected result:
-***************
-* midu        *
-* madeval     *
-* educalvolpz *
-***************
-* */
