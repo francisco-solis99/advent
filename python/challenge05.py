@@ -7,7 +7,7 @@ def organizeShoes(shoes):
         dictpairs.setdefault(size,[]).append(side)
         if len(dictpairs[size]) == 2:
             if dictpairs[size][0] != dictpairs[size][1]:
-                pairs.append(next(iter(dictpairs)))
+                pairs.append(list(dictpairs.keys())[0])
                 dictpairs={}
             else:
                 dictpairs[size].pop()
