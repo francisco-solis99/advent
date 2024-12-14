@@ -11,4 +11,7 @@ describe('Prepare gifts', () => {
   test('Returns the correct gifts - Test 3', () => {
     expect(prepareGifts([])).toEqual([])
   })
+  test('Returns the correct gifts - Test 4', () => {
+    expect(prepareGifts([2, 3, 4, 4, 2])).toEqual([2, 3, 4])
+  })
 })
