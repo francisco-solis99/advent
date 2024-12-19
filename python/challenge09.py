@@ -1,54 +1,38 @@
 from typing import List, Literal
 
 def move_train(board: List[str], mov: Literal['U', 'D', 'R', 'L']) -> Literal['none', 'crash', 'eat']:
-    for i,j in enumerate(board):
+    for i, j in enumerate(board):
         if '@' in j:
-            head_index, head_value = i,j
+            head_index, head_value = i, j
             head = j.index('@')
 
+    # Determinar el desplazamiento basado en el movimiento
+    delta_row, delta_col = 0, 0
     if mov == 'U':
-        if 0 <= head_index-1 < len(board):
-            if board[head_index-1][head] == '*':
-                return 'eat'
-            elif board[head_index-1][head] == 'o':
-                return 'crash'
-            else:
-                return 'none'
-        else:
-            return 'crash'
-
+        delta_row = -1
     elif mov == 'D':
-        if 0 <= head_index+1 < len(board):
-            if board[head_index+1][head] == '*':
-                return 'eat'
-            elif board[head_index+1][head] == 'o':
-                return 'crash'
-            else:
-                return 'none'
-        else:
-            return 'crash'
-
+        delta_row = 1
     elif mov == 'L':
-        if 0 <= head-1 < len(head_value):
-            if board[head_index][head-1] == '*':
-                return 'eat'
-            elif board[head_index][head-1] == 'o':
-                return 'crash'
-            else:
-                return 'none'
-        else:
-            return 'crash'
-
+        delta_col = -1
     elif mov == 'R':
-        if 0 <= head+1 < len(head_value):
-            if board[head_index][head+1] == '*':
-                return 'eat'
-            elif board[head_index][head+1] == 'o':
-                return 'crash'
-            else:
-                return 'none'
-        else:
-            return 'crash'
+        delta_col = 1
+
+    # Calcular las nuevas coordenadas
+    new_row = head_index + delta_row
+    new_col = head + delta_col
+
+    # Verificar si las nuevas coordenadas están dentro del tablero
+    if not (0 <= new_row < len(board)) or not (0 <= new_col < len(head_value)):
+        return 'crash'
+
+    # Evaluar el contenido de la nueva posición
+    next_cell = board[new_row][new_col]
+    if next_cell == '*':
+        return 'eat'
+    elif next_cell == 'o':
+        return 'crash'
+    else:
+        return 'none'
 
 board = [
     '·····',
@@ -59,7 +43,7 @@ board = [
 ]
 
 
-print(move_train(board,'R'))
+print(move_train(board,'U'))
 
 
 
