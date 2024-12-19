@@ -6,7 +6,6 @@ def move_train(board: List[str], mov: Literal['U', 'D', 'R', 'L']) -> Literal['n
             head_index, head_value = i, j
             head = j.index('@')
 
-    # Determinar el desplazamiento basado en el movimiento
     delta_row, delta_col = 0, 0
     if mov == 'U':
         delta_row = -1
@@ -21,11 +20,10 @@ def move_train(board: List[str], mov: Literal['U', 'D', 'R', 'L']) -> Literal['n
     new_row = head_index + delta_row
     new_col = head + delta_col
 
-    # Verificar si las nuevas coordenadas están dentro del tablero
+    # Verificar si las nuevas coordenadas están dentro de la matriz
     if not (0 <= new_row < len(board)) or not (0 <= new_col < len(head_value)):
         return 'crash'
 
-    # Evaluar el contenido de la nueva posición
     next_cell = board[new_row][new_col]
     if next_cell == '*':
         return 'eat'
