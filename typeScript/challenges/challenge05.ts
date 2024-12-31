@@ -1,4 +1,4 @@
-interface Shoe {
+export interface Shoe {
   type: 'I' | 'R'
   size: number
 }
@@ -8,7 +8,7 @@ interface ShoePair {
   R: number
 }
 
-function organizeShoes (shoes: Shoe[]): number[] {
+export function organizeShoes (shoes: Shoe[]): number[] {
   const shoesPairs: Record<string, ShoePair> = {}
   const boots: number[] = []
   for (const { type, size } of shoes) {
