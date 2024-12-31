@@ -67,7 +67,14 @@ To get started with the solutions, follow these steps:
 | 15| 📊[Create a table based on an array with objects](https://adventjs.dev/en/challenges/2024/15)| 🟢          | ⭐⭐⭐⭐⭐             | [View](/typeScript/challenges/challenge15.ts)| [View](/python/challenge15.py)| [View](/java/challenge15.java)|
 | 16| ❄️[Remove all adjacent snow piles from the path](https://adventjs.dev/en/challenges/2024/16)| 🟢            | ⭐⭐⭐⭐⭐            | [View](/typeScript/challenges/challenge16.ts)| [View](/python/challenge16.py)| [View](/java/challenge16.java)|
 | 17| 💣[Get how many explosive coal bombs are in adjacent positions](https://adventjs.dev/en/challenges/2024/17)| 🟠            | ⭐⭐⭐⭐⭐            | [View](/typeScript/challenges/challenge17.ts)| [View](/python/challenge17.py)| [View](/java/challenge17.java)|
-
+| 18 | 🎁 [Find the most common gift](https://adventjs.dev/en/challenges/2024/18)     | 🟢         | ⭐⭐⭐⭐⭐            | [View](/typeScript/challenges/challenge18.ts)  | [View](/python/challenge18.py) | [View](/java/challenge18.java)  |
+| 19 | 🏆 [Create a leaderboard](https://adventjs.dev/en/challenges/2024/19)            | 🟠         | ⭐⭐⭐⭐⭐            | [View](/typeScript/challenges/challenge19.ts)  | [View](/python/challenge19.py) | [View](/java/challenge19.java)  |
+| 20 | 🎄 [Check if the string is a palindrome](https://adventjs.dev/en/challenges/2024/20)          | 🟢         | ⭐⭐⭐⭐⭐            | [View](/typeScript/challenges/challenge20.ts)  | [View](/python/challenge20.py) | [View](/java/challenge20.java)  |
+| 21 | ❄️ [Sort the snowflakes](https://adventjs.dev/en/challenges/2024/21)                  | 🟢         | ⭐⭐⭐⭐⭐            | [View](/typeScript/challenges/challenge21.ts)  | [View](/python/challenge21.py) | [View](/java/challenge21.java)  |
+| 22 | 🎅 [Count the number of Santa's helpers](https://adventjs.dev/en/challenges/2024/22)                  | 🟠         | ⭐⭐⭐⭐⭐            | [View](/typeScript/challenges/challenge22.ts)  | [View](/python/challenge22.py) | [View](/java/challenge22.java)  |
+| 23 | 🦌 [Reindeer race results](https://adventjs.dev/en/challenges/2024/23)         | 🔴         | ⭐⭐⭐⭐⭐            | [View](/typeScript/challenges/challenge23.ts)  | [View](/python/challenge23.py) | [View](/java/challenge23.java)  |
+| 24 | 📜  [Create a holiday greeting card generator](https://adventjs.dev/en/challenges/2024/24)| 🟢          | ⭐⭐⭐⭐⭐            | [View](/typeScript/challenges/challenge24.ts)| [View](/python/challenge24.py)| [View](/java/challenge24.java)|
+| 25 | 🎉  [Final challenge: Build a Christmas tree structure](https://adventjs.dev/en/challenges/2024/25)| 🟠          | ⭐⭐⭐⭐⭐            | [View](/typeScript/challenges/challenge25.ts)| [View](/python/challenge25.py)| [View](/java/challenge25.java)|
 
 ## 🤔 How to contribute
 
