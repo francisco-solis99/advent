@@ -88,3 +88,5 @@ We encourage contributions! If you have solutions in other programming languages
 ## 🙏 Acknowledgments
 
 Again, special thanks to Miguel Ángel Durán [@midudev](https://midu.dev/) for creating AdventJS and fostering a vibrant community of developers.
+
+![Advent challenges completed](image.png)
